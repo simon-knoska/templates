@@ -1,0 +1,50 @@
+\documentclass{notes}
+
+%% Prefer Latin Modern fonts
+\usepackage{lmodern}
+
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% Properties
+\usepackage[pdftex,
+            pdfauthor={Šimon Knoška},
+            pdftitle={Geometrical Methods of Theoretical Physics},
+            pdfsubject={Study Notes},
+            pdfkeywords={physics, theoretical physics, geometry},
+            pdfproducer={LaTeX with hyperref},
+            pdfcreator={pdfLaTeX}]{hyperref}
+
+\usepackage{silence}
+\WarningsOff[everypage] % Suppress warnings related to package everypage
+\usepackage[some]{background}
+\usepackage{lipsum}
+
+% own packages
+\usepackage{macros} % general package
+
+% Additional packages
+\usepackage{booktabs} % table rules
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\author{Šimon Knoška}
+\def\mail{simon.knoska@matfyz.cz}
+\def\title{Title of the subject}
+\def\preface{The purpose of this template is to write longer (study) texts.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\input{chapters/title_page}
+
+\tableofcontents
+
+\newpage
+
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+\input{chapters/chap01}
+
+\end{document}
