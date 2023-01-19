@@ -1,0 +1,38 @@
+% version 0.1.0
+\newcommand\id{\: \:} % index space
+\renewcommand{\d}{\mathrm{d}} % derivative
+\DeclareMathAlphabet{\vect}{OT1}{\sfdefault}{bx}{sl} % vectors
+
+%%% The field of all real and natural numbers
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+
+%%% Macros for definitions, theorems, claims, examples, ... (requires amsthm package)
+
+%% thmsytle
+\theoremstyle{thmstyle}
+% theorem
+\newtheorem{thm}{Theorem}[section]
+% lemama
+\newtheorem{lemma}{Lemma}
+% definition
+\newtheorem{defn}{Definition}[section]
+
+%% remarkstyle
+\theoremstyle{rmkstyle}
+% remark
+\newtheorem*{remark}{Remark}
+
+%% examplestyle
+\theoremstyle{examplestyle}
+% example
+\newtheorem{example}{Example}[section]
+
+%%% An environment for proofs
+\newenvironment{myproof}{
+  \par\medskip\noindent
+  \textit{Proof}:
+}{
+\newline
+\rightline{$\qedsymbol$}
+}
